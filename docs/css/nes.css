@@ -1,0 +1,70 @@
+/* body {
+    background: linear-gradient(to right, #4286f4, #373B44);
+} */
+
+body {
+    font-family: 'Press Start 2P';
+    font-weight: 400;
+    font-size: 12px;
+    margin: 2%;
+    padding: 3vh;
+    background-color: #212529;
+}
+
+h1 {
+    color: dodgerblue;
+    padding: 25px;
+}
+
+h2 {
+    color: #606060;
+}
+
+h3 {
+    color: #979696;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.left,
+.right,
+{
+    width: 40vw;
+    padding: 25px;
+}
+
+.inside-left,
+.inside-right {
+    width: auto;
+    padding: 25px;
+    background-color: dodgerblue;
+}
+
+.nes-container.is-rounded.is-dark.with-title {
+    padding: 10px;
+    margin: 10px;
+}
+
+img {
+    height: 41vh;
+    width: auto;
+    margin: 10px;
+    border: 2px solid;
+    border-radius: 2px;
+}
+
+a,
+a:visited {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+footer {
+    padding: 3vh;
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+}

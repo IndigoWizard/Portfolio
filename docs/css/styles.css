@@ -1,0 +1,53 @@
+/* body {
+    background: linear-gradient(to right, #4286f4, #373B44);
+} */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 3%;
+    padding: 3vh;
+    border: solid 2px;
+}
+
+h1 {
+    color: dodgerblue;
+}
+
+h2 {
+    color: dimgray;
+}
+
+h3 {
+    color: #454545;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    height: 70vh;
+}
+
+.left,
+.right,
+{
+    width: 46vw;
+    padding: 3vh;
+}
+
+img {
+    height: 40vh;
+    width: auto;
+    margin: 3%;
+}
+
+a,
+a:visited {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+footer {
+    padding: 3vh;
+    display: flex;
+    flex-direction: row;
+}
