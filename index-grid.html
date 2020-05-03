@@ -4,94 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--
-    <link rel="stylesheet" href="/NESCSS/nes.css/css/nes-core.css"> 
-    -->
     <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./docs/css/grid.css">
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <title>Portfolio</title>
+    <!--<link rel="stylesheet" href="/NESCSS/nes.css/css/nes-core.css">-->
+    <link rel="stylesheet" href="./docs/css/nes-grid.css">
+    <title>Portforlio - CSS GRID</title>
 </head>
 
 <body>
-    <div class="grid-container">
+
+    <main>
         <div class="about">
-            <div class="nes-container is-rounded is-dark with-title">
-                <h1 class="title">About</h1>
-                <h1>Indigo Wizard</h1>
-                <p>
-                    Tech & Open Source enthousiast, Indie game dev & MLH Localhost Organizer! <br> I'm a Geography & Spatial Planning Master student with Environment major at University of Science and Technology Houari Boumedien. <br> I use GIS tools
-                    like QGIS, OSM maps, Sentinel Program ...etc to make maps and analyze geographical data on territorial planning projects and assessing environmental impact of natural/anthropic phenomenons on urban or wild areas.
-
+            <div class="bio">
+                <h1>Bio</h1>
+                <p>General info goes here: <br> - academics <br> - bio
                 </p>
-                <img src="https://www.pixenli.com/image/RRGWYDmk" alt="ProfilePicture">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae repellendus laboriosam adipisci sit dolores alias? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="pic">
+                <h1>pic</h1>
+                <img id="pp" src="./docs/src/album/pic.png">
+            </div>
+            <div class="skill">
+                <h1>skills</h1>
+                <ul>
+                    <li>::Skill//<progress value="32" max="100"> 32% </progress>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li>::Skill//<progress value="32" max="100"> 32% </progress>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li>::Skill//<progress value="32" max="100"> 32% </progress>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li>::Skill//<progress value="32" max="100"> 32% </progress>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                </ul>
             </div>
         </div>
-
         <div class="projects">
-            <div class="nes-container is-rounded is-dark with-title">
-                <h2 class="title">Projects:</h2>
-                <div class="lists">
-                    <ul class="nes-list is-disc">
-                        <li>
-                            <a href="https://github.com/IndigoWizard/Pokedex" target="_blank">
-                                <h3>Pokédex</h3>
-                            </a>
-                        </li>
-                        <p>A WebDev personal project based on Pokémon's Pokédex project.</p>
-                        <li>
-                            <a href="https://github.com/MicroClub-USTHB/Zitcode19" target="_blank">
-                                <h3>Zitcode19</h3>
-                            </a>
-                        </li>
-                        <p>is a project that focuses on the <b>COVID-19</b> breakout on national level in Algeria. (Repo maintainer)</p>
-                        <li>
-                            <a href="https://quetzalwing.itch.io/rushed-adventure" target="_blank">
-                                <h3>Rushed Adventure</h3>
-                            </a>
-                        </li>
-                        <p>Rushed Adventure is a 3D low-poly game prototype developed and submitted as our entry for <a href="#"><b>Algeria Game Challenge</b></a> 2019.</p>
-                        <li>
-                            <a href="https://chekbo.itch.io/minimalistic-life" target="_blank">
-                                <h3>Minimalistic Life</h3>
-                            </a>
-                        </li>
-                        <p>Minimalistic Life is a small game submitted for <a href="https://itch.io/jam/gamezanga8" target="_blank"><b>Zanga Game Jam</b></a> 2018.</p>
-                        <li>
-                            <a href="#">
-                                <h3>Portfolio</h3>
-                            </a>
-                        </li>
-                        <p>This very portfolio was made after the MLH Localhost workshop "Build and Deploy your first website" during Citrus Hack 2020.</p>
-                    </ul>
-                </div>
-            </div>
-
+            <h1>projects</h1>
+            <ul>
+                <li>:://</li>
+                <li>:://</li>
+                <li>:://</li>
+                <li>:://</li>
+                <li>:://</li>
+                <li>:://</li>
+                <li>:://</li>
+            </ul>
         </div>
-
         <div class="contact">
-            <div class="nes-container is-rounded is-dark with-title">
-                <p class="title">Contact</p>
-                <footer>
-                    <section class="icon-list">
-                        <a href="https://github.com/IndigoWizard/" target="_blank"><i class="nes-icon github is-medium"></i></a>
-                        <a href="https://www.linkedin.com/in/ahmed-islem-mokhtari/" target="_blank"><i class="nes-icon linkedin is-medium"></i></a>
-                        <a href="islemmokhtari@gmail.com" target="_blank"><i class="nes-icon gmail is-medium"></i></a>
-                        <a href="https://www.instagram.com/indigo.wizard/" target="_blank"><i class="nes-icon instagram is-medium"></i></a>
-                    </section>
-                </footer>
-            </div>
+            <h1>contact</h1>
+            <p>contact goes here: GitHub, LinkedIn, Instagram, Gmail, Website.</p>
+
         </div>
-    </div>
+
+    </main>
+
 </body>
 
 </html>
-
-
-
-<!-- 
-    Footer:        
-        <a href="https://www.linkedin.com/in/ahmed-islem-mokhtari/" target="_blank"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
-        <a href="https://github.com/IndigoWizard" target="_blank"><i class="fa fa-github fa-3x"></i></a>
-        <a href="islemmokhtari@gmail.com"><i class="fa fa-envelope fa-3x"></i></a>
- -->
