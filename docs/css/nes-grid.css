@@ -27,7 +27,7 @@ main {
     grid-area: about;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: fit-content fit-content;
+    grid-template-rows: fit-content 350px;
     grid-template-areas: "bio bio" "pic skill";
 }
 
@@ -39,18 +39,26 @@ main {
 .pic {
     grid-area: pic;
     display: flex;
+    justify-self: center;
+    justify-content: center;
     background-color: tomato;
 }
 
 #pp {
     border: 1px solid white;
-    justify-self: center;
     margin: 5px;
+    height: 150px;
+    width: auto;
+}
+
+#ar {
+    width: 720px;
 }
 
 .skill {
     grid-area: skill;
     background-color: lightsalmon;
+    padding-right: 25px;
 }
 
 .projects {
