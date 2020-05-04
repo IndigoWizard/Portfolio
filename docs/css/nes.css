@@ -19,6 +19,10 @@ body {
     margin: 5px;
 }
 
+h1 {
+    color: dodgerblue;
+}
+
 h2 {
     color: #606060;
 }
