@@ -5,68 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
-    <!--<link rel="stylesheet" href="/NESCSS/nes.css/css/nes-core.css">-->
+    <link rel="stylesheet" href="./docs/css/nes.min.css">
     <link rel="stylesheet" href="./docs/css/nes-grid.css">
     <title>Portforlio - CSS GRID</title>
 </head>
 
 <body>
-    <div class="nes-container is-rounded is-dark">
+    <div class="nes-container with-title is-rounded is-dark">
+        <h1 class="title">Portfolio</h1>
 
         <main>
             <div class="about">
-
                 <div class="bio">
-                    <h1>Bio</h1>
-                    <p>Tech & Open Source enthousiast, Indie game dev & MLH Localhost Organizer!<br><br> I'm a Geography & Spatial Planning Master student with Environment major at University of Science and Technology Houari Boumedien.
-                        <br><br> I use GIS tools like QGIS, OSM maps, Sentinel Program ...etc to make maps and analyze geographical data on territorial planning projects and assessing environmental impact of natural/anthropic phenomenons on urban or Wilderness
-                        areas.
-                        <br><br> I do 3D modeling, create game assets, 3D&2D scenes and animations with Blender. Ialso develop indie games with my team mates.
-                    </p>
+                    <div class="nes-container is-dark">
+
+                        <h1>Bio</h1>
+                        <p>Tech & Open Source enthousiast, Indie game dev & MLH Localhost Organizer!<br><br> I'm a Geography & Spatial Planning Master student with Environment major at University of Science and Technology Houari Boumedien.
+                            <br><br> I use GIS tools like QGIS, OSM maps, Sentinel Hub ...etc to make maps and analyze geographical data on territorial planning projects and assessing environmental impact of natural/anthropic phenomenons on urban or Wilderness
+                            areas.
+                            <br><br> I do 3D modeling, create game assets, 3D&2D scenes and animations with Blender. I also develop indie games with my team mates.
+                        </p>
+                    </div>
                 </div>
-                <div class="pic">
-                    <h1>Pic</h1>
-                    <img id="pp" src="./docs/src/album/pic.png">
+                <div class="nes-container is-dark">
+
+                    <div class="pic">
+                        <h1>Pic</h1>
+                        <img id="pp" src="./docs/src/album/ProfilePicture.jpg">
+                    </div>
                 </div>
 
                 <div class="skill">
+                    <div class="nes-container is-dark">
 
-                    <h1>Skills</h1>
-                    <ul class="nes-list is-disc">
-                        <li>
-                            <h3>3D & Digital Art</h3>
-                        </li>
-                        <p>3D moddeling, game assets and animations.</p>
-                        <progress class="nes-progress is-success" value="75" max="100"></progress>
-                        <li>
-                            <h3>GIS / Spatial Planning</h3>
-                        </li>
-                        <p>GIS tools, creating maps and spatial planning.</p><progress class="nes-progress is-success" value="55" max="100"></progress>
-                        <li>
-                            <h3>Git</h3>
-                        </li>
-                        <p>Frequently use CLI & GUI Git client as vcs for projects.</p><progress class="nes-progress is-success" value="65" max="100"></progress>
-                        <li>
-                            <h3>HTML/CSS</h3>
-                        </li>
-                        <p>General web developement.</p><progress class="nes-progress is-warning" value="50" max="100"></progress>
-                        <li>
-                            <h3>JavaScript</h3>
-                        </li>
-                        <p>Currently learning for general Web developement and GIS scripting.</p><progress class="nes-progress" value="20" max="100"></progress>
-                        <li>
-                            <h3>Python</h3>
-                        </li>
-                        <p>Currently learning python for GIS oriented use and data analysis.</p>
-                        <progress class="nes-progress" value="20" max="100"></progress>
-                    </ul>
+                        <h1>Skills</h1>
+                        <ul class="nes-list is-disc">
+                            <li>
+                                <h3>3D modeling | Game assets | Digital Art</h3>
+                            </li>
+                            <progress class="nes-progress is-success" value="75" max="100"></progress>
+                            <li>
+                                <h3>GIS | Spatial Planning | Mapping.</h3>
+                            </li>
+                            <progress class="nes-progress is-success" value="55" max="100"></progress>
+                            <li>
+                                <h3>Git (CLI & GUI Git client)</h3>
+                            </li>
+                            <progress class="nes-progress is-success" value="65" max="100"></progress>
+                            <li>
+                                <h3>Web developement | HTML/CSS</h3>
+                            </li>
+                            <progress class="nes-progress is-warning" value="50" max="100"></progress>
+                            <li>
+                                <h3>Currently learning JavaScript for WebDev & GIS scripting.</h3>
+                            </li>
+                            <progress class="nes-progress" value="20" max="100"></progress>
+                            <li>
+                                <h3>Currently learning Python for GIS oriented use & data analysis.</h3>
+                            </li>
+
+                            <progress class="nes-progress" value="20" max="100"></progress>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
-            <div class="projects">
-                <div class="nes-container is-rounded is-dark">
 
-                    <h1>projects</h1>
+            <div class="projects">
+                <div class="nes-container with-title is-rounded is-dark">
+                    <h1 class="title">Projects</h1>
                     <ul class="nes-list is-disc">
                         <li>
                             <a href="#">
@@ -106,18 +113,20 @@
                     </ul>
                 </div>
             </div>
-            <div class="contact">
-                <div class="nes-container is-rounded is-dark">
 
-                    <h1>contact</h1>
+            <div class="contact">
+                <div class="nes-container with-title is-rounded is-dark">
+                    <h1 class="title">Contact</h1>
+                    <p>Want to get in touch? You can find me here:</p>
+
                     <section class="icon-list">
-                        <p>Want to get in touch? You can find me here:</p>
                         <a href="https://github.com/IndigoWizard/" target="_blank"><i class="nes-icon github is-medium"></i></a>
                         <a href="https://www.linkedin.com/in/ahmed-islem-mokhtari/" target="_blank"><i class="nes-icon linkedin is-medium"></i></a>
                         <a href="https://www.instagram.com/indigo.wizard/" target="_blank"><i class="nes-icon instagram is-medium"></i></a>
                         <a href="https://twitter.com/HypercompeBlue/" target="_blank"><i class="nes-icon twitter is-medium"></i></a>
                         <a href="mailto:islemmokhtari.contact@gmail.com" target="_blank"><i class="nes-icon gmail is-medium"></i></a>
-                        <a href="#"><i class="nes-icon star is-medium"></i></a></section>
+                        <a href="#"><i class="nes-icon star is-medium"></i></a>
+                    </section>
                 </div>
             </div>
         </main>

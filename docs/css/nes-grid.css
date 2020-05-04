@@ -1,11 +1,12 @@
 * {
     font-family: 'Press Start 2P';
     font-weight: 400;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 h1 {
-    color: dodgerblue;
+    color: #979696;
+    font-size: 15px;
 }
 
 body {
@@ -17,56 +18,75 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: fit-content 1fr;
     grid-template-rows: fit-content fit-content;
-    background-color: lightslategray;
+    /* background-color: lightslategray; */
     grid-template-areas: "about about projects" "contact contact contact";
+}
+
+a,
+a::after {
+    color: #979696;
+    transition: .25s;
 }
 
 .about {
     grid-area: about;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: fit-content 350px;
+    grid-template-columns: 1fr minmax(300px, 2fr);
+    grid-template-rows: fit-content 150px;
     grid-template-areas: "bio bio" "pic skill";
+}
+
+.nes-container.is-dark {
+    border-color: transparent;
 }
 
 .bio {
     grid-area: bio;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .pic {
     grid-area: pic;
-    display: flex;
-    justify-self: center;
-    justify-content: center;
-    background-color: tomato;
+    width: fit-content;
+    /* justify-items: center;
+    justify-items: center; */
+    /* background-color: tomato; */
 }
 
 #pp {
     border: 1px solid white;
     margin: 5px;
-    height: 150px;
+    height: 250px;
     width: auto;
-}
-
-#ar {
-    width: 720px;
 }
 
 .skill {
     grid-area: skill;
-    background-color: lightsalmon;
-    padding-right: 25px;
+    /* background-color: lightsalmon; */
+    padding-right: 5px;
 }
 
 .projects {
     grid-area: projects;
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 
 .contact {
     grid-area: contact;
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
+}
+
+.nes-container.with-title.is-rounded.is-dark>.title {
+    font-size: 18px;
+}
+
+.nes-progress {
+    height: 20px;
+    width: 500px;
+}
+
+.nes-list.is-disc {
+    display: inline;
 }
