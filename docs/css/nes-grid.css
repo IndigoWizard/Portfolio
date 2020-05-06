@@ -2,18 +2,22 @@
     font-family: 'Press Start 2P';
     font-weight: 400;
     font-size: 12px;
-}
-
-h1 {
-    color: #979696;
-    font-size: 15px;
+    color: #f8f8ff;
 }
 
 body {
-    margin: 10px;
-    padding: 30px;
-    height: 500px;
+    margin: 20px;
+    padding: 10px;
+    height: fit-content;
     background-color: #2a2a2a;
+    ;
+}
+
+header {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
 }
 
 main {
@@ -24,9 +28,24 @@ main {
     grid-template-areas: "about about projects" "contact contact contact";
 }
 
+h1 {
+    color: #979696;
+    font-size: 15px;
+}
+
+b {
+    /* color: #f2a365; */
+    color: #ff614e;
+}
+
+h3>b {
+    color: #4169e1;
+    font-size: 14px;
+}
+
 a,
 a::after {
-    color: #979696;
+    color: #636469;
     transition: .25s;
 }
 
@@ -36,10 +55,8 @@ a::after {
     grid-template-columns: 1fr minmax(300px, 2fr);
     grid-template-rows: fit-content 150px;
     grid-template-areas: "bio bio" "pic skill";
-}
-
-.nes-container.is-dark {
-    border-color: transparent;
+    justify-content: left;
+    padding-left: 10px;
 }
 
 .bio {
@@ -49,7 +66,13 @@ a::after {
 
 .pic {
     grid-area: pic;
-    width: fit-content;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     /* justify-items: center;
     justify-items: center; */
     /* background-color: tomato; */
@@ -60,12 +83,13 @@ a::after {
     margin: 5px;
     height: 250px;
     width: auto;
+    border-radius: 50%;
 }
 
 .skill {
     grid-area: skill;
     /* background-color: lightsalmon; */
-    padding-right: 5px;
+    margin-left: 55px;
 }
 
 .projects {
@@ -78,15 +102,45 @@ a::after {
     /* background-color: lightgreen; */
 }
 
+.nes-container.with-title.is-rounded.is-dark {
+    /* border: 2px white solide; */
+    padding-right: 50px;
+    padding-left: 25px;
+}
+
 .nes-container.with-title.is-rounded.is-dark>.title {
     font-size: 18px;
+    color: darkcyan;
 }
 
 .nes-progress {
     height: 20px;
-    width: 500px;
+    width: fit-content;
+    box-shadow: 5px 6px 5px 5px #191c1fc7;
+    margin: 5px;
 }
 
 .nes-list.is-disc {
     display: inline;
+    margin: 10px;
 }
+
+.nes-list.is-disc>h3 {
+    color: #f2a365;
+}
+
+
+/*  
+#979696 //h1
+#c2a578 // bold_text
+#636469 // links before
+#2a2a2a // background
+*/
+
+
+/* Blue palette
+#222831
+#30475e
+#f2a365
+#ececec
+*/
