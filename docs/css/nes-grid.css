@@ -31,7 +31,7 @@ main {
 }
 
 h1 {
-    color: #979696;
+    color: #7e737e;
     font-size: 15px;
 }
 
@@ -147,7 +147,7 @@ a::after {
 }
 
 .nes-list.is-circle>li::before {
-    color: floralwhite;
+    color: #dcdbdd;
 }
 
 
