@@ -60,6 +60,10 @@ a::after {
     transition: .5s;
 }
 
+.nes-balloon.from-left.is-dark {
+    box-shadow: 5px 6px 5px 5px #191c1fc7;
+}
+
 .about {
     grid-area: about;
     display: grid;
