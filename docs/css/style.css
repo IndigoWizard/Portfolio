@@ -35,11 +35,12 @@ h1 {
     font-size: 15px;
 }
 
-h3 {
+#projecTitle {
     color: #979696;
+    font-size: 14px;
 }
 
-h4 {
+h2 {
     color: dodgerblue;
     font-size: 14px;
     margin-left: 45px;
@@ -49,9 +50,8 @@ b {
     color: #df9b6e;
 }
 
-h3>b {
-    color: #7e737e;
-    font-size: 14px;
+span {
+    color: #979696;
 }
 
 a,
@@ -120,12 +120,14 @@ a::after {
     /* background-color: lightgreen; */
 }
 
-.nes-container.with-title.is-rounded.is-dark {
-    padding-right: auto;
-    padding-left: 25px;
+.nes-container.is-rounded.is-dark.with-title {
+    /* padding-right: 10px;
+    padding-left: 10px; */
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
-.nes-container.with-title.is-rounded.is-dark>.title {
+.nes-container.is-rounded.is-dark.with-title>.title {
     font-size: 18px;
     color: dodgerblue;
 }
@@ -137,27 +139,25 @@ a::after {
     margin: auto;
 }
 
-.nes-list.is-disc {
-    display: inline;
-    margin: 50px;
-}
-
-.nes-list.is-disc>h3 {
-    color: #f2a365;
-}
-
-.nes-list.is-circle {
-    margin: 10px;
-}
-
 .nes-list.is-circle>li::before {
     color: #dcdbdd;
 }
 
+.nes-list.is-circle>li {
+    color: #979696;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
-/* Blue palette
-#222831
-#30475e
-#f2a365
-#ececec
+.nes-list.is-circle>p {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+/* light palette
+#002b40
+#068057
+#9ad941
+#f4ffbf
 */
